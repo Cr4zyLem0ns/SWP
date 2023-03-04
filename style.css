@@ -1,18 +1,8 @@
 
-
-section{
-  height: 100vh;
-  display: flex;
-  scroll-snap-align: start;
-  
-  
-}
-.container{
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
 body {
+
+  
+  
   background-color: black;
   height: 100vh;
   overflow: hidden; 
@@ -20,6 +10,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: lemon;
+  
 }
 
 @keyframes rotate {
@@ -36,29 +27,10 @@ body {
   }
 }
 
-#blob {
-  background-color: white;
-  height: 34vmax;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, aquamarine, mediumpurple);
-  animation: rotate 20s infinite;
-  opacity: 0.8;
-}
-
-#blur {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 3;
-  backdrop-filter: blur(2vmax);
-}
 
 h1 {
+  
+  
   font-family: 'Space Mono', monospace;
   font-size: clamp(3rem, 10vw, 10rem);
   color: white;
@@ -70,59 +42,79 @@ h1 {
   top: 50%;
   translate: -50% -50%;
   z-index: 3;
+  
 }
 
-/* -- Links -- */
 
-#links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-  padding: 1rem;
-}
-
-.meta-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.meta-link > :is(span, a) {
-  font-family: "Rubik", sans-serif;
+h2{
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(1rem, 5vw, 5rem);
   color: white;
 }
+h5 {
+  left: 8%;
+  top: 1%;
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(1rem, 3vw, 3rem);
+  color: white;
+  position: absolute;
+  padding: 0rem clamp(1rem, 5vw, 3rem);
 
-.meta-link > .label {
-  width: 100px; 
-  text-align: right;
+  translate: -50% -50%;
+  z-index: 3;
+  background: #474bff;
+background: -webkit-linear-gradient(0deg, #474bff 0%, #00a3ff 100%);
+background: linear-gradient(0deg, #474bff 0%, #00a3ff 100%);
+  Border-radius:55px
+
+
+
 }
 
-.meta-link > a {
-  text-decoration: none;
-  outline: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+  color: white;
+  text-align: center;
+
+  
+  left: 50%;
+  top: 50%;
+  
+  
 }
 
-.meta-link > a.source {
-  color: rgb(94, 106, 210);
+t9{
+  color: white;
+  text-align: center;
+
+  
+  left: 50%;
+  top: 50%;
+  
+  
 }
 
-.meta-link > a:is(:hover, :focus) > i {
-  color: white;  
-}
 
-.meta-link > a.youtube {
-  color: rgb(239, 83, 80);
-}
-
-.meta-link > a.youtube > i {
-  padding-top: 0.2rem; 
-}
-
-.meta-link > a > i {
-  height: 1rem;
-  line-height: 1rem;
+h9{
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(1rem, 1vw, 1.25rem);
+  color: white;
+  
 }
